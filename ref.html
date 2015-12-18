@@ -1,0 +1,95 @@
+<?php
+mysql_connection('localhost','root','');
+
+mysql_select_db('order');
+
+$sql="SELECT * FROM users";
+$records=mysql_query($sql);
+
+
+?>
+<html>
+		<head>
+			<title>Asignment 2</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			<script src="jscripit.js"></script>
+		</head>
+	
+	<body>
+		<div class="container">
+				<div class="jumbotron">
+				
+					<h1>Conestoga Pizzeria</h1>
+					<a href="bootstrap.html">Home</a>
+					<h2>Welcome</h2>
+					<h2>You are logged in as an admin.</h2></div>
+					
+					
+					
+					<table class="table">
+                         <thead>
+                             <tr>
+								<th><b>orderid</b></th>
+								<th><b>name</b></th>
+								<th><b>orderdate</b></th>
+								<th><b>completed</b></th>
+								<
+							</tr>	
+						</thead>		
+								
+						<tbody>	
+							<tr>
+								<td>101</td>
+								<td>Sam</td>
+								<td>2015-10-12</td>
+								<td>Yes</td>
+								<td><a href=change.html>change</a></td>
+								<td>
+							</tr>	
+								
+							
+							<tr>
+								<td>102</td>
+								<td>jessica</td>
+								<td>2015-11-05</td>
+								<td>No</td>
+								<td><a href=change.html>change</a></td>
+                            </tr>
+
+							<tr>
+								<td>103</td>
+								<td>chriss</td>
+								<td>2015-10-29</td>
+								<td>Yes</td>
+								<td><a href=change.html>change</a></td>
+							
+							</tr>
+								
+							
+							
+							<tr>
+								<td>104</td>
+								<td>Krystal</td>
+								<td>2015-11-12</td>
+								<td>Yes</td>
+								<td><a href=change.html>change</a></td>
+
+							
+							</tr>
+							<tr>
+								<td>105</td>
+								<td>Lucas</td>
+								<td>2015-11-03</td>
+								<td>No</td>
+								<td><a href=change.html>change</a></td>
+								
+							</tr>
+						</tbody>	
+					</table>
+						
+	</body>
+</html>
